@@ -10,6 +10,11 @@
         <el-button type="primary" @click="btnclick">count++</el-button>
         <el-button type="primary" @click="btnclick2">count*2</el-button>
       </div>
+			<p>demo2 公共数据</p>
+			<div>
+				<p>userId{{userid}}</p>
+				<el-button @click="getUserid">获取最新userid</el-button>
+			</div>
     </div>
   </div>
 </template>
@@ -25,6 +30,9 @@ const btnclick = () => {
 const btnclick2 = () => {
   counter.count = counter.doubleCount;
 };
+const getUserid = () => { 
+	
+}
 </script>
 <style scoped lang="scss">
 .pinia-contain {

@@ -54,6 +54,23 @@ const router = createRouter({
       name: "Pinia",
       component: () => import("../views/PiniaPage.vue"),
     },
+    {
+      path: "/router",
+      name: "Router",
+      component: () => import("../views/RouterView.vue"),
+      // children: [
+      //   {
+      //     path: "detail",
+      //     name: "Detail",
+      //     component: () => import("../views/DetailView.vue"),
+      //   },
+      // ],
+    },
+    {
+      path: "/detail",
+      name: "Detail",
+      component: () => import("../views/DetailView.vue"),
+    },
   ],
 });
 

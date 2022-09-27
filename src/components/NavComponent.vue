@@ -5,6 +5,7 @@
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/todolist">接口调用</RouterLink>
       <RouterLink to="/pinia">Pinia学习</RouterLink>
+      <RouterLink to="/router">Router学习</RouterLink>
     </nav>
   </div>
 </template>
