@@ -1,8 +1,14 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  /**
+	 * 三种模式
+	 * "history": createWebHistory()
+		"hash": createWebHashHistory()
+		"abstract": createMemoryHistory()
+	 */
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -23,6 +29,11 @@ const router = createRouter({
           name: "Directives",
           component: () => import("../views/baseknowledge/Directives.vue"),
         },
+        {
+          path: "eventhandle",
+          name: "Eventhandle",
+          component: () => import("../views/baseknowledge/EventHandle.vue"),
+        },
       ],
     },
     {
@@ -37,6 +48,11 @@ const router = createRouter({
       path: "/todolist",
       name: "todolist",
       component: () => import("../views/TodoList.vue"),
+    },
+    {
+      path: "/pinia",
+      name: "Pinia",
+      component: () => import("../views/PiniaPage.vue"),
     },
   ],
 });

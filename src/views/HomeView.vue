@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {
   Document,
-  Menu as IconMenu,
   Location,
+  Menu as IconMenu,
   Setting,
 } from "@element-plus/icons-vue";
 // import TheWelcome from "../components/TheWelcome.vue";
@@ -31,6 +31,9 @@ const handleClose = () => {};
               </el-menu-item>
               <el-menu-item index="1-2">
                 <RouterLink to="/home/directives">指令</RouterLink>
+              </el-menu-item>
+              <el-menu-item index="1-3">
+                <RouterLink to="/home/eventhandle">事件处理</RouterLink>
               </el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="Group Two">

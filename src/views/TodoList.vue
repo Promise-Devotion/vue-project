@@ -21,7 +21,7 @@ export default {
 
     function getlist() {
       // let url = `http://localhost:5000/api/users/userlist?name=jim`;
-      queryProse({ name: "aaaa" }).then((res) => {
+      queryProse({ name: "jim" }).then((res) => {
         console.log(res);
         state.arr = res.data;
       });

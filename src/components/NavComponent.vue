@@ -1,9 +1,10 @@
 <template>
   <div class="wrapper">
     <nav>
-      <RouterLink to="/home">Home</RouterLink>
+      <RouterLink to="/home">Vue基础</RouterLink>
       <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/todolist">todolist</RouterLink>
+      <RouterLink to="/todolist">接口调用</RouterLink>
+      <RouterLink to="/pinia">Pinia学习</RouterLink>
     </nav>
   </div>
 </template>
