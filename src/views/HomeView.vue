@@ -35,6 +35,9 @@ const handleClose = () => {};
               <el-menu-item index="1-3">
                 <RouterLink to="/home/eventhandle">事件处理</RouterLink>
               </el-menu-item>
+              <el-menu-item index="1-3">
+                <RouterLink to="/home/slotdemo">slot插槽</RouterLink>
+              </el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="Group Two">
               <el-menu-item index="1-3">item three</el-menu-item>

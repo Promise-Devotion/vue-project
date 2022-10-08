@@ -34,6 +34,11 @@ const router = createRouter({
           name: "Eventhandle",
           component: () => import("../views/baseknowledge/EventHandle.vue"),
         },
+        {
+          path: "slotdemo",
+          name: "Slotdemo",
+          component: () => import("../views/baseknowledge/SlotDemo.vue"),
+        },
       ],
     },
     {
