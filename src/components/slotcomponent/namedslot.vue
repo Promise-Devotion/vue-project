@@ -1,6 +1,8 @@
 <template>
   <template name="demo2">
-    <div class="named-slot"><p>具名插槽</p></div>
+    <div class="named-slot">
+      <p>具名插槽</p>
+    </div>
   </template>
   <template>hello</template>
 </template>
