@@ -9,10 +9,7 @@
       <h4>demo2 具名插槽</h4>
       <div>
         <namedslotVue>
-          <template #demo2></template>
-          <template>
-            <div>hello</div>
-          </template>
+          <template #demo2>具名插槽2 </template>
         </namedslotVue>
       </div>
     </div>

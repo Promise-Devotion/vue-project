@@ -1,10 +1,10 @@
 <template>
-  <template name="demo2">
+  <slot>
     <div class="named-slot">
       <p>具名插槽</p>
     </div>
-  </template>
-  <template>hello</template>
+  </slot>
+  <slot name="demo2"></slot>
 </template>
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
