@@ -3,6 +3,8 @@ import type { AxiosError, AxiosRequestConfig } from "axios";
 import axios, { AxiosResponse } from "axios";
 import { ElMessage } from "element-plus";
 
+export const REQUEST_TOKEN_KEY = "Access-Token";
+const STORAGE_TOKEN_KEY = "STORAGE_TOKEN_KEY";
 
 interface IAxios<D = any> {
   code?: number;

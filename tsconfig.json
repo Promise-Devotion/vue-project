@@ -10,5 +10,9 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "module": "es2020", // 可以根据需要选择合适的值
+    "target": "es2020", // 或其他目标 ECMAScript 版本
+  }
 }
