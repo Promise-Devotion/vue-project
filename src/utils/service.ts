@@ -21,7 +21,6 @@ interface ResponseConfig extends AxiosResponse {
 interface HMRequestConfig extends InternalAxiosRequestConfig {
   headers: any;
 }
-console.log(import.meta.env.VITE_BASE_URL);
 const request: AxiosInstance = axios.create({
   baseURL: process.env.VITE_BASE_URL, //|| "http://127.0.0.1:5000/"
   timeout: 6000,
