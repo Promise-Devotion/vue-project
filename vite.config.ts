@@ -8,14 +8,11 @@ import { defineConfig, loadEnv } from "vite";
 export default defineConfig(({ mode, command }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
   const env = loadEnv(mode, process.cwd());
-  console.log(env);
   const { VITE_APP_ENV, VITE_BASE_URL } = env;
   return {
     define: {
-      "process.env": {
-        VITE_APP_ENV: VITE_APP_ENV,
-        VITE_BASE_URL: VITE_BASE_URL,
-      },
+      "process.env.VITE_BASE_URL": JSON.stringify(VITE_BASE_URL),
+      "process.env.VITE_APP_ENV": JSON.stringify(VITE_APP_ENV),
     },
     plugins: [vue(), vueJsx()],
     resolve: {
