@@ -57,3 +57,4 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```sh
 npm run lint
 ```
+![test image size](/src/assets/linkedin_profile_image.png){:width="100px" height="100px"}

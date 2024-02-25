@@ -1,13 +1,11 @@
 import request from "@/utils/service";
 
 export default {
-  // 代发货列表查询
-  getBillList(params: any) {
+  getBillList(params: { id: string }) {
     return request({
-      url: `/bill-list`,
+      url: "bill-list",
       method: "GET",
       params: params,
     });
   },
-}
-
+};

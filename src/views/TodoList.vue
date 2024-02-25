@@ -2,41 +2,42 @@
   <div class="todolist">this is todolist page!</div>
   <div>
     <ul>
-      <li v-for="item in state.arr" :key="item.id">{{ item.name }}</li>
+      <li v-for="item in state.arr" :key="item.bill_id">
+        {{ item.bill_name }}
+      </li>
     </ul>
   </div>
   <div>
     <button type="button" @click="getlist">点击</button>
   </div>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import { reactive } from "vue";
-import { queryProse } from "../api/user";
+import billService from "../api/bill";
 
-export default {
-  setup() {
-    const state = reactive({
-      arr: [],
-    });
-
-    function getlist() {
-      // let url = `http://localhost:5000/api/users/userlist?name=jim`;
-      queryProse({ name: "jim" }).then((res) => {
-        console.log(res);
-        state.arr = res.data;
-      });
-      // axios.get(url).then((res) => {
-      //   console.log(res);
-      //   state.arr = res.data.data;
-      // });
+const state = reactive<StateConfig>({
+  arr: [
+    {
+      bill_id: "12133",
+      bill_name: "旅游",
     }
-
-    return {
-      state,
-      getlist,
-    };
-  },
-};
+  ],
+});
+interface StateConfig {
+  arr: Item[];
+}
+interface Item {
+  bill_id: string;
+  bill_name: string;
+}
+function getlist() {
+  // let url = `http://localhost:5000/api/users/userlist?name=jim`;
+  billService.getBillList({ id: "1235" }).then((res) => {
+    console.log(res);
+    state.arr = res.data;
+    console.log(res.data);
+  });
+}
 </script>
 
 <style scoped>
