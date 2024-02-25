@@ -57,3 +57,4 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```sh
 npm run lint
 ```
+![image](<https://github.com/Promise-Devotion/vue-project/blob/main/src/assets/logo.svg>)
